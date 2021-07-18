@@ -49,7 +49,7 @@ class Trainer():
         batch_sharps1x = []
         n = len(self.pyramid_blurs)
         for i in range(self.max_iter,0,-1):
-            if(i == self.max_iter):#first iter  # 3
+            if(i == self.max_iter):#first iter
                 #generate batch_blurs2x
                 for j in range(n):
                     pyramid_blur = self.pyramid_blurs[j]
