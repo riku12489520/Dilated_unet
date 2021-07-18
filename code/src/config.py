@@ -21,8 +21,7 @@ class ResourceConfig:
         
         self.generator_json_path = os.path.join(self.model_dir, "generator.json")
         self.generator_weights_path = os.path.join(self.model_dir, "generator.h5")
-        self.train_directory_path = "./Gopro/train"
-        #self.test_directory_path = 
+        self.train_directory_path = "./Gopro/train" 
 
     def create_directories(self):
         dirs = [self.project_dir, self.data_dir, self.model_dir, self.debug_dir, self.output_dir]
