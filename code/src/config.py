@@ -34,6 +34,7 @@ class TrainConfig:
         self.generatorImageSize = 256
         self.generatorImageChannels = 3
         self.batch_size = 4
+        self.initEpoch= 0
         self.maxEpoch = 2000
         self.gpu_num = 1
 
