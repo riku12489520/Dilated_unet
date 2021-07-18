@@ -11,9 +11,6 @@ import queue
 import threading
 import os
 
-config = tf.ConfigProto()
-config.gpu_options.allow_growth = True
-session = tf.Session(config=config)
 
 class Trainer():
     def __init__(self,config):
