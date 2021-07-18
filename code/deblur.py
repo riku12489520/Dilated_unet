@@ -34,7 +34,7 @@ if __name__ == "__main__":
         config.application.iter = args.iter
     if(args.result_dir):
         config.application.deblurring_result_dir = args.result_dir
-    set_session_config(per_process_gpu_memory_fraction=1, allow_growth=True, device_list=args.gpu)
+    set_session_config(per_process_gpu_memory_fraction=0.8, allow_growth=True, device_list=args.gpu)
     gpus = args.gpu.split(",")
     config.trainer.gpu_num = len(gpus)
     if(args.train):
